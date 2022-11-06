@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class BoardProjectApplicationTests {
 
     @Test
-    void contextLoads(){
+    public static void main(String[] args){SpringApplication.run(BoardProjectApplication.class, args);
 
     }
 
