@@ -41,14 +41,14 @@ public class Article {
 
     protected Article(){ }
 
-    private Article(String title, String content, String hashtag) {
+     private Article(String title, String content, String hashtag) {
         this.title = title;
         this.content = content;
         this.hashtag = hashtag;
 
     }
 
-   public static Article(String title, String content, String hashtag){
+   public static Article of(String title, String content, String hashtag){
         return new Article(title, content, hashtag);
     }
 
