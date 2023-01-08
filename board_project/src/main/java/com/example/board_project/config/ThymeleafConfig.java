@@ -1,4 +1,5 @@
 package com.example.board_project.config;
+
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -8,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 
 @Configuration
-public class ThymeleafConfig{
+public class ThymeleafConfig {
 
     @Bean
     public SpringResourceTemplateResolver thymeleafTemplateResolver(
@@ -19,6 +20,8 @@ public class ThymeleafConfig{
 
         return defaultTemplateResolver;
     }
+
+
     @RequiredArgsConstructor
     @Getter
     @ConstructorBinding
@@ -28,9 +31,6 @@ public class ThymeleafConfig{
          * Use Thymeleaf 3 Decoupled Logic
          */
         private final boolean decoupledLogic;
-
-        public boolean isDecoupledLogic() {
-            return this.decoupledLogic;
-        }
     }
+
 }
